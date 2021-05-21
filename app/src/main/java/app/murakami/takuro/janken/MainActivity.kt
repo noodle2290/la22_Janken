@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         var lose = 0
 
         gooButton.setOnClickListener {
-            player.text = "あなたの手はグーです"
+            player.setImageResource(R.drawable.goo)
             val number: Int = Random.nextInt(3)
 
             when(number){
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         chokiButton.setOnClickListener {
-            player.text = "あなたの手はチョキです"
+            player.setImageResource(R.drawable.choki)
             val number: Int = Random.nextInt(3)
 
             when(number){
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         paaButton.setOnClickListener {
-            player.text = "あなたの手はパーです"
+            player.setImageResource(R.drawable.paa)
             val number: Int = Random.nextInt(3)
 
             when(number){
